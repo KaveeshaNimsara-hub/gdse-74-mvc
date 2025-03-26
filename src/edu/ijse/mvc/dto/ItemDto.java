@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.ijse.mvc.dto;
+
+/**
+ *
+ * @author Kaveesha
+ */
+public class ItemDto {
+    private String itemCode;
+    private String description;
+    private String packSize;
+    private int qoh;
+    private double unitPrice;
+
+    public ItemDto() {
+    }
+
+    public ItemDto(String itemCode, String description, String packSize, int qoh, double unitPrice) {
+        this.itemCode = itemCode;
+        this.description = description;
+        this.packSize = packSize;
+        this.qoh = qoh;
+        this.unitPrice = unitPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "ItemDto{" + "itemCode=" + itemCode + ", description=" + description + ", packSize=" + packSize + ", qoh=" + qoh + ", unitPrice=" + unitPrice + '}';
+    }
+    
+      
+}
